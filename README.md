@@ -1,4 +1,4 @@
-# Single Page Portfolio
+# Vertical Portfolio
 ----
 Vertial Buolder URL: [CodePen](https://codepen.io/JayNightmare/pen/LYaVXGv).
 
