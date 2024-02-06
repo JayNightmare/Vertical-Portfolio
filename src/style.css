@@ -107,6 +107,7 @@ p.left-side-p { text-align: left !important; }
     cursor: pointer;
 
     .icon { filter: blur(5px); transition: ease-in-out .3s; }
+
     .p_1_data { 
       display: block;
       border-radius: 5px;
@@ -165,7 +166,8 @@ p.left-side-p { text-align: left !important; }
 .block {
   width: 50px;
   height: 50px;
-  background: blue;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 5px;
 }
 
 .icon {
@@ -192,6 +194,18 @@ p.left-side-p { text-align: left !important; }
 }
 
 .display-nothing { overflow: hidden; }
+
+
+
+.gitlab {
+  background: #fc6d2680 !important;
+}
+
+
+
+
+
+
 
   /* Rain */
   .rain {
@@ -249,7 +263,7 @@ p.left-side-p { text-align: left !important; }
   }
   /* ---- */
 
-@media (max-width: 50vh) {   
+@media (max-width: 750px) {
   .display-nothing { display: none; }
   
   .navbar-panel {
@@ -283,5 +297,4 @@ p.left-side-p { text-align: left !important; }
   .squares {
     grid-template-columns: repeat( 1, 1fr ); 
   }
-   
 }
