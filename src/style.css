@@ -90,6 +90,62 @@ p.left-side-p { text-align: left !important; }
   top: calc( 5% );
 }
 
+.links-out {
+  text-align: center;
+  position: relative;
+  top: -28px;
+  width: fit-content;
+
+  left: 50%;
+  transform: translate(-50%);
+
+  h5 {
+    margin-bottom: 10px;
+  }
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  gap: 5px;
+
+  margin: 0;
+  padding: 0;
+
+  a {
+    font-style: italic;
+  }
+}
+
+.grid-tr {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-right {
+  margin: 10px 10px 0 0;
+
+  width: 50px;
+  height: 50px;
+  background-color: #55555582;
+
+  border-radius: 8px;
+}
+
+.top-right svg {
+  width: 32px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
 .squares {
   display: grid;
   grid-template-columns: repeat( 2, 1fr ); 
