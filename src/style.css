@@ -167,10 +167,25 @@ p.left-side-p { text-align: left !important; }
 
 @keyframes gloss {
   0% {
-    transform: skewX(-30deg) translateX(0);
+    transform: skewX(-30deg) translateX(10%);
+  }
+  20% {
+    transform: skewX(-30deg) translateX(3000%);
   }
   100% {
-    transform: skewX(-30deg) translateX(5000%);
+    transform: skewX(-30deg) translateX(3000%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
  
@@ -183,7 +198,7 @@ p.left-side-p { text-align: left !important; }
   border: 1px solid #2c2c2c;
   border-radius: 5px;
   overflow: hidden;
-  animation: float 2s ease-in-out infinite; /* Add the floating animation */
+  animation: float 3s ease-in-out infinite; /* Add the floating animation */
 }
 
 #test-build::before {
@@ -195,8 +210,8 @@ p.left-side-p { text-align: left !important; }
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
   transform: skewX(-30deg);
-  animation: gloss 2s linear infinite;
-  /* animation-delay: 8s; Initial delay */
+  animation: gloss 7s linear infinite;
+  animation-timing-function: linear;
 }
 
 #test-build h4 {
@@ -220,6 +235,8 @@ p.left-side-p { text-align: left !important; }
   background: rgba(40, 40, 40, 0.65);
   border-radius: 5px;
   transition: ease-in-out .3s;
+
+  overflow: hidden;
   
   padding-bottom: 10px;  
   
@@ -270,6 +287,19 @@ p.left-side-p { text-align: left !important; }
 .Projects { 
   margin-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.block {
+  text-decoration: none;
+  text-align: center;
+
+  p {
+    margin: 0;
+    position: relative;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .knowledge {
@@ -435,3 +465,4 @@ footer {
 footer .dim-footer {
   color: rgb(125, 125, 125)
 }
+
