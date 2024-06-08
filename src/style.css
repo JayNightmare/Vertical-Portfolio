@@ -173,7 +173,7 @@ p.left-side-p { text-align: left !important; }
     transform: skewX(-30deg) translateX(5000%);
   }
 }
-
+ 
 #test-build {
   position: fixed;
   top: 10px;
