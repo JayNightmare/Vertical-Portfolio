@@ -135,8 +135,11 @@ p.left-side-p { text-align: left !important; }
   background-color: #55555582;
 
   border-radius: 8px;
+
+  overflow: hidden;
 }
 
+/* * For SVG Icons * */
 .top-right svg {
   width: 32px;
   position: relative;
@@ -144,6 +147,61 @@ p.left-side-p { text-align: left !important; }
   left: 50%;
   transform: translate(-50%, -50%);
   fill: white;
+}
+
+[aria-label="discord link top right"], [aria-label="github link top right"] {
+  transition: background-color 0.4s ease-in-out;
+}
+
+[aria-label="discord link top right"]:hover {
+  background-color: rgb(0, 81, 202);
+
+  transition: background-color 0.4s ease-in-out;
+}
+
+[aria-label="github link top right"]:hover {
+  background-color: #0d1117;
+
+  transition: background-color 0.4s ease-in-out;
+}
+
+@keyframes gloss {
+  0% {
+    transform: skewX(-30deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-30deg) translateX(5000%);
+  }
+}
+
+#test-build {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+
+  background-color: #161616;
+  border: 1px solid #2c2c2c;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: float 2s ease-in-out infinite; /* Add the floating animation */
+}
+
+#test-build::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-30deg);
+  animation: gloss 2s linear infinite;
+  /* animation-delay: 8s; Initial delay */
+}
+
+#test-build h4 {
+  margin: 10px;
+  padding: 0;
 }
 
 .squares {
@@ -369,6 +427,11 @@ body.back-row-toggle .rain.back-row {
 }
 
 footer {
-  height: 150px;
+  height: fit-content;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+footer .dim-footer {
+  color: rgb(125, 125, 125)
 }
