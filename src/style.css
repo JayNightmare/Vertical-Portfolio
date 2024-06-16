@@ -149,7 +149,7 @@ p.left-side-p { text-align: left !important; }
   fill: white;
 }
 
-[aria-label="discord link top right"], [aria-label="github link top right"] {
+[aria-label="discord link top right"], [aria-label="github link top right"], [aria-label="twitter link top right"], [aria-label="twitch link top right"] {
   transition: background-color 0.4s ease-in-out;
 }
 
@@ -161,6 +161,18 @@ p.left-side-p { text-align: left !important; }
 
 [aria-label="github link top right"]:hover {
   background-color: #0d1117;
+
+  transition: background-color 0.4s ease-in-out;
+}
+
+[aria-label="twitter link top right"]:hover {
+  background-color: #15202b;
+
+  transition: background-color 0.4s ease-in-out;
+}
+
+[aria-label="twitch link top right"]:hover {
+  background-color: #6441a5;
 
   transition: background-color 0.4s ease-in-out;
 }
