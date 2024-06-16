@@ -21,5 +21,4 @@
   };
 
   $(document).ready(makeItRain);
-})(jQuery);
- 
+})(jQuery); 
