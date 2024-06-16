@@ -244,7 +244,6 @@ p.left-side-p { text-align: left !important; }
     top: calc( 2px );
     border: 1px solid rgba(#F2F4F8, 0);
     box-shadow: 0 15px 20px rgba(155,155,155,1), 0 0 5px rgba(0,0,0,.1);
-    cursor: pointer;
 
     .icon { filter: blur(5px); transition: ease-in-out .3s; }
 
