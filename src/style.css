@@ -313,6 +313,19 @@ p.left-side-p { text-align: left !important; }
   }
 }
 
+.coming-soon {
+  font-size: 10px;
+  font-style: italic;
+  text-align: left;
+
+  p {
+    position: relative;
+    left: 7px;
+    top: 13px;
+    transform: rotateZ(15deg);
+  }
+}
+
 .knowledge {
   padding-left: 10px;
 }
