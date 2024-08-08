@@ -1,0 +1,94 @@
+html {
+    background: var(--background-primary);
+}
+
+:root {
+    --background-primary: #05030C;
+}
+
+body {
+    background: var(--background-primary);
+
+    font-family: -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Open Sans, Helvetica Neue, sans-serif;
+
+    overflow: hidden scroll;
+
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    background: var(--background-primary);
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(100, 100, 100, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+p, a, h1, h2, h3, h4, h5, div, span {
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+a[rel~=nofollow] {
+    color: #0452a5
+}
+
+a[rel~=nofollow]:hover {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white;
+}
+
+.header {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+#a {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+#page-title {
+    padding-right: 10px;
+}
+
+[data-custom-class='body'] {
+    margin: 10px;
+}
+
+footer {
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .dim-footer {
+    color: rgb(125, 125, 125)
+}
