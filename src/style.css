@@ -13,6 +13,7 @@ body {
   
   overflow: hidden scroll;
   
+  -webkit-user-drag: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -23,6 +24,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 ::-webkit-scrollbar {
@@ -304,6 +315,19 @@ p.left-side-p { text-align: left !important; }
   text-decoration: none;
   text-align: center;
 
+  width: 50px;
+  height: 50px;
+  background: #090a16;
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 10px rgba(255,255,255,.1), 0 0 2px rgba(0,0,0,.1);
+
+  *:is(a) {
+    cursor: pointer;
+  }
+
   p {
     margin: 0;
     position: relative;
@@ -311,17 +335,38 @@ p.left-side-p { text-align: left !important; }
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  [alt="Node JS"] {
+    margin-top: 4px;
+  }
+
+  [alt="PM2"] {
+    margin-top: 8px;
+  }
+
+  [alt="NPM"], [alt="Level Bot"] {
+    margin-top: 6px;
+  }
+
+  [alt="Translator Bot"] {
+    margin-top: 1px;
+  }
+
+  [alt="Gen Bot"] {
+    margin-left: -15px;
+    margin-top: 1.5px;
+  }
 }
 
 .coming-soon {
   font-size: 10px;
   font-style: italic;
-  text-align: left;
+  text-align: center;
 
   p {
     position: relative;
-    left: 7px;
-    top: 13px;
+    left: 0px;
+    top: 11px;
     transform: rotateZ(15deg);
   }
 }
@@ -338,13 +383,6 @@ p.left-side-p { text-align: left !important; }
   gap: 23px;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.block {
-  width: 50px;
-  height: 50px;
-  background: rgba(100, 100, 100, 0.2);
-  border-radius: 5px;
 }
 
 .icon {
