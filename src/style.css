@@ -1,7 +1,7 @@
 html { background: var(--background-primary); }
 
 :root {
-  --background-primary: #05030C;
+  --background-primary: #05030cc5;
 }
 
 body {
@@ -75,6 +75,23 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+header *, #test-build, .grid-tr {
+  z-index: 5;
+}
+
+#moving-background { 
+  position: absolute;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  width: 200%;
+  height: 35%;
+  top: 0;
+  z-index: 1;
+  filter: blur(5000px);
+  opacity: 1;
+}
+
 .navbar-panel {
   height: 185px;
   position: relative;
@@ -84,21 +101,16 @@ header {
 
 .navbar-panel h1 {
   position: relative;
-  top: 15px;
-  font-size: 45px;
+  font-size: 65px;
 }
 
 [aria-label="bottombreaker"] {
   position: relative;
-  top: 20px; 
   transition: ease-in-out .3s;
 }
 
-p.left-side-p { text-align: left !important; }
-
 .navbar-panel > h5 {
   position: relative;
-  top: calc( 5% );
 }
 
 .links-out {
@@ -113,6 +125,10 @@ p.left-side-p { text-align: left !important; }
   h5 {
     margin-bottom: 10px;
   }
+}
+
+.no-top {
+  top: -45px !important;
 }
 
 #links {
@@ -211,6 +227,18 @@ p.left-side-p { text-align: left !important; }
     transform: translateY(0px);
   }
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
  
 #test-build {
   position: fixed;
@@ -219,6 +247,7 @@ p.left-side-p { text-align: left !important; }
 
   background-color: #161616;
   border: 1px solid #2c2c2c;
+  box-shadow: 0 10px 50px rgba(102, 102, 102, 0.514), 0 0 5px rgba(0,0,0,.1);
   border-radius: 5px;
   overflow: hidden;
   animation: float 3s ease-in-out infinite; /* Add the floating animation */
@@ -290,7 +319,7 @@ p.left-side-p { text-align: left !important; }
       transition: ease-in-out .3s; 
     }
     
-    .p_1_data > p {
+    .p_1_data > .desc > p {
       padding-left: 10px;
       padding-right: 10px;
       text-align: justify;
@@ -305,6 +334,8 @@ p.left-side-p { text-align: left !important; }
 
   .icon { transition: ease-in-out .3s; } 
 }
+
+p.left-side-p { text-align: left !important; }
 
 .Projects { 
   margin-top: 1rem;

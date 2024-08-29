@@ -17,10 +17,9 @@
 </head>
 
 <!-- ! Comments use the VSCode Extension "Better Comments" to appear better ! -->
- 
 <body>
   <!-- * Nav Bar * -->
-  <header>
+  <header id="header">
     <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
       <defs>
         <linearGradient id="b055c376-3666-4d32-8bc6-1aa4b9ea8e2b" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(25)">
@@ -46,7 +45,7 @@
         <hr aria-label="bottombreaker">
       </div>
     </div>
-    <div class="links-out">
+    <div class="links-out no-top">
       <h5> Discord Bot Info </h5>
       <div id="links">
         <a href="pages/info/TOS/tos.html">TOS</a>
@@ -111,8 +110,12 @@
           <div class="js-projects p_1_data">
             <h3>JavaScript</h3>
             <hr>
-            <p>In my two years of JavaScript experience, most of my time has been spent programming backend resources for websites and programming Discord Bots for servers.</p>
-            <p>My formal teaching was done during my first year of university, but I've gone beyond by doing personal research for projects. A lot of my personal research came in the form of doing certificates on LinkedIn Learning and ChatGPT where I used it to help me build and research topics the further my understanding about the discord api.</p>
+            <div class="desc" >
+              <p>My knowledge of JS comes from lectures from university and from external courses. When I'm not taking notes in the class room or doing coursework, I'm doing freelance work as a discord bot programmer.</p>
+              <p>I've created bots for multiple servers ranging from small efficient bots to large complex bots that handle api requests. My most recent bot, Levelling, is a perfect example of a simple bot. However, the Translator is a great example of a complex bot.</p>
+              <p>In the future I'm planning on implementing an LLM like ChatGPT or llama or DeepAI to a bot to help debug and summaries code that users post.</p>
+            </div>
+            </p>
             <hr>
             <!-- * Knowledge * -->
             <div class="knowledge">
@@ -143,11 +146,9 @@
           <div class="java-projects p_1_data">
             <h3>Java</h3>
             <hr>
-            
-            <p>With three years of Java experience, I've developed a solid foundation through doing university coursework and many personal projects along with LinkedIn Learning. At university, I enhanced my Java skills by attempting difficult challenges and learning ways to make my programs efficient.</p>
-            <p>Outside the classroom, I channeled my passion into many projects. One being a point-and-click game and an AI chatbot. These projects (even if incomplete) helped my find new ways of programming and helped me think outside the box with certain issues.</p>
-            <p>With the combination of academic learning and personal exploration, I hope to one day master Java.</p>
-            
+            <div class="desc">
+              <p>Java is my main languages in university. We study Collections, OOP, Fundamentals, GUI, and Advanced Programming Concepts (like Lambda, Streams and Records) to prepare us to be software engineers.</p>
+            </div>
             <hr>
 
             <!-- * Knowledge * -->
@@ -179,8 +180,10 @@
           <div class="python-projects p_1_data">
             <h3>Python</h3>
             <hr>
-            <p>I've got four years of experience in Python. I got informal teaching from Codecademy and LinkedIn Learning and touched upon it in my first year of Computer Science</p>
-            <p>The projects I have in Python have more quality and quantity. My personal projects consist of Discord Bots and a simple AI compiler for filtering chat messages.</p>
+            <div class="desc">
+              <p>I've got four years of experience in Python. I got informal teaching from Codecademy and LinkedIn Learning and touched upon it in my first year of Computer Science</p>
+              <p>The projects I have in Python have more quality and quantity. My personal projects consist of Discord Bots and a simple AI compiler for filtering chat messages.</p>
+            </div>
             <hr>
             <!-- * Knowledge * -->
             <div class="knowledge">
@@ -222,7 +225,9 @@
           <div class="html-projects p_1_data">
             <h3>HTML</h3>
             <hr>
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <hr>
             <!-- * Knowledge * -->
             <div class="knowledge">
@@ -252,7 +257,9 @@
           <div class="css-projects p_1_data">
             <h3>CSS</h3>
             <hr>
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <hr>
             <!-- * Knowledge * -->
             <div class="knowledge">
@@ -283,7 +290,9 @@
             <h3>Oracle SQL</h3>
             <hr>
             <!-- ! Text Here ! -->
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <!-- ! // ! -->
             <hr>
             <!-- * Knowledge * -->
@@ -327,7 +336,9 @@
             <h3>PHP</h3>
             <hr>
             <!-- ! Text Here ! -->
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <!-- ! // ! -->
             <hr>
             <!-- * Knowledge * -->
@@ -359,7 +370,9 @@
             <h3>Github</h3>
             <hr>
             <!-- ! Text Here ! -->
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <!-- ! // ! -->
             <hr>
             <!-- * Knowledge * -->
@@ -397,7 +410,9 @@
             <h3>Git</h3>
             <hr>
             <!-- ! Text Here ! -->
-            <p>Text Coming Soon <3</p>
+            <div class="desc">
+              <p>Text Coming Soon <3</p>
+            </div>
             <!-- ! // ! -->
             <hr>
             <!-- * Knowledge * -->
@@ -428,10 +443,14 @@
 
   <!-- * Footer Section * -->
   <footer>
-    <p>v0.4.2</p>
+    <p>v0.4.3</p>
     <p class="dim-footer">Copyright © 2024 NexusGit</p>
     <p class="dim-footer">All Rights Reserved For Your Mum</p>
   </footer>
   <!-- * // * -->
 
+
+  <div id="moving-background">
+
+  </div>
 </body>
