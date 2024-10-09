@@ -32,41 +32,35 @@
     </div>
 
     <script>
-        // Simulated function to check OAuth status
-        // Function to check OAuth2 authentication status by querying your server
-        async function checkOAuthStatus() {
+        // Function to get query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to update the status message based on the query parameter
+        function updateStatusMessage() {
             const statusMessage = document.getElementById('status-message');
             const details = document.getElementById('details');
             const backLink = document.getElementById('back-link');
 
-            try {
-                // Send request to your server's endpoint (replace with your actual server endpoint)
-                const response = await fetch('https://nexusgit.info/api/check-oauth-status', {
-                    method: 'GET',
-                    credentials: 'include' // Include cookies if needed for session-based checks
-                });
+            const status = getQueryParam('status');
 
-                // Parse the response
-                const data = await response.json();
-
-                if (data.success) {
-                    statusMessage.textContent = 'OAuth2 Authentication Successful!';
-                    details.textContent = 'You can now return to the application.';
-                    backLink.style.display = 'inline';
-                } else {
-                    statusMessage.textContent = 'OAuth2 Authentication Failed!';
-                    details.textContent = 'There was an issue during authentication. Please try again.';
-                }
-            } catch (error) {
-                console.error('Error checking OAuth2 status:', error);
-                statusMessage.textContent = 'An error occurred while checking the authentication status.';
-                details.textContent = 'Please try again later.';
+            if (status === 'success') {
+                statusMessage.textContent = 'OAuth2 Authentication Successful!';
+                details.textContent = 'You can now return to the application.';
+                backLink.style.display = 'inline';
+            } else if (status === 'failure') {
+                statusMessage.textContent = 'OAuth2 Authentication Failed!';
+                details.textContent = 'There was an issue during authentication. Please try again.';
+            } else {
+                statusMessage.textContent = 'Processing...';
+                details.textContent = '';
             }
         }
 
-        // Call the function to check the status when the page loads
-        window.onload = checkOAuthStatus;
-
+        // Call the function to update the status message when the page loads
+        window.onload = updateStatusMessage;
     </script>
 </body>
 </html>
