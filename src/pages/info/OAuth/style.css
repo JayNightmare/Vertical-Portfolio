@@ -1,0 +1,209 @@
+:root {
+    --background-primary: #05030C;
+}
+
+body {
+    background: var(--background-primary);
+    font-family: -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Open Sans, Helvetica Neue, sans-serif;
+    
+    overflow: hidden scroll;
+    
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 60px
+}
+
+h1,h2 {
+    font-weight: 700
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 48px
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px
+}
+
+h3,h4 {
+    font-weight: 700
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h5,h6 {
+    line-height: 24px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: cacl(16px);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+a[rel~=nofollow] {
+    color: #0452a5
+}
+
+a[rel~=nofollow]:hover {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    background: var(--background-primary);
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(100,100,100,0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+p, a, h1, h2, h3, h4, h5 {
+    color: #fff;
+}
+
+hr {
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    height: 1px;
+    margin: 1rem auto;
+    width: 182px;
+}
+
+ul {
+    color: #fff
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#a {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+#page-title {
+    padding-right: 10px;
+}
+
+.page {
+    width: 100%
+}
+
+#button_back {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #ffffff;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.translations-list-container {
+    color: #ffffff;
+    padding-bottom: 8px;
+    margin: 0 0 16px
+}
+
+.translations-list-container .translations-list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.translations-list-container .translations-list .translations-list-item {
+    display: inline-block;
+    padding: 0;
+    margin: 0 8px 8px 0;
+    color: #fff
+}
+
+.translations-list-container .translations-list .translations-list-item a {
+    display: inline-block;
+    padding: 4px 8px
+}
+
+.translations-list-container .translations-list .translations-list-item a.active {
+    color: #fff;
+    background: #334055
+}
+
+.translations-content-container {
+    padding-top: 8px;
+    border-top: 1px solid #eee
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    margin: 32px 0 0;
+    padding: 16px 0;
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer .dim-footer {
+    color: rgb(125, 125, 125);
+}
