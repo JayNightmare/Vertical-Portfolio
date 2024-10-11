@@ -7,7 +7,9 @@
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-                            Preamble
+<hr>
+ 
+<h3>Preamble</h3>
 
   The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
