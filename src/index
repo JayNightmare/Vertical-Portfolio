@@ -41,15 +41,15 @@
       <h5> Follow the project on Github</h5>
       <div id="links">
         <a href="https://github.com/JayNightmare/Vertical-Portfolio">Source Code</a>
-        <a href="https://jaynightmare.github.io/Vertical-Portfolio/src/index.html">Test Deployed Site</a>
+        <a href="https://jaynightmare.github.io/Vertical-Portfolio/src/index">Test Deployed Site</a>
         <hr aria-label="bottombreaker">
       </div>
     </div>
     <div class="links-out no-top">
       <h5> Discord Bot Info </h5>
       <div id="links">
-        <a href="pages/info/TOS/tos.html">TOS</a>
-        <a href="pages/info/PP/pp.html">Privacy Policy</a>
+        <a href="pages/info/TOS/tos">TOS</a>
+        <a href="pages/info/PP/pp">Privacy Policy</a>
       </div>
     </div>
   </header>
@@ -165,8 +165,8 @@
             <div class="knowledge Projects">
               <p class="left-side-p">Projects:</p>
               <div class="blocks-of-knowledge">
-                <a href="pages/projects/Java/CV-Builder/cv.html" class="cv block"><p>CV</p></a>
-                <a href="pages/projects/Java/Swing/swing.html" class="swing block"><p style="font-size: 15px; padding: 0 5px 0 5px;">Swing</p></a>
+                <a href="pages/projects/Java/CV-Builder/cv" class="cv block"><p>CV</p></a>
+                <a href="pages/projects/Java/Swing/swing" class="swing block"><p style="font-size: 15px; padding: 0 5px 0 5px;">Swing</p></a>
                 <div class="coming-soon block"><p>COMING</p><p>SOON</p></div>
               </div>
             </div>
