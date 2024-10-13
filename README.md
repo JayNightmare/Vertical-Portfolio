@@ -4,10 +4,10 @@
 
 <div align=center>
 
-| Site       |   Status    | Link                                                                           |
--------------|-------------|--------------------------------------------------------------------------------|
-| Nexus Live | ✅ LIVE ✅ | [NexusGit - Live](https://nexusgit.info)                                       |
-| Nexus Test | ⚠️ TEST ⚠️ | [NexusGit - Test](https://jaynightmare.github.io/Vertical-Portfolio/src/index) |
+| Site       |   Status    | Version | Link                                                                           |
+-------------|-------------|---------|--------------------------------------------------------------------------------|
+| Nexus Live | ✅ LIVE ✅ | v0.6.5  | [NexusGit - Live](https://nexusgit.info)                                       |
+| Nexus Test | ⚠️ TEST ⚠️ | v0.6.5  | [NexusGit - Test](https://jaynightmare.github.io/Vertical-Portfolio/src/index) |
   
 </div>
 
