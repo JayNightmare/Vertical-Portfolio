@@ -22,3 +22,21 @@
 
   $(document).ready(makeItRain);
 })(jQuery); 
+
+
+function scrollToJavaScript() {
+  const goToElement = document.getElementById('bio'); // Replace with the actual ID of the target element
+  const element = document.getElementById('javascript'); // Replace with the actual ID of the target element
+  
+  if (goToElement) {
+      goToElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  if (element) {
+    element.classList.add('scroll-effect');
+
+    setTimeout(() => {
+      element.classList.remove('scroll-effect');
+    }, 7000);
+  }
+}

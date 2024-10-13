@@ -286,6 +286,7 @@ header *, #test-build, .grid-tr {
   width: 30vw; 
   height: 30vw; 
   background: rgba(40, 40, 40, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.0); 
   border-radius: 5px;
   transition: ease-in-out .3s;
 
@@ -467,6 +468,26 @@ p.left-side-p { text-align: left !important; }
     position: relative;
     top: 5px;
   }
+
+  [alt="Bootstrap"] {
+    margin-top: 10px;
+  }
+
+  [alt="JavaScript"] {
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+  }
+
+  [alt="WordPress"] {
+    margin-left: -15px;
+    margin-top: -1.5px;
+  }
+
+  [alt="CodePen"] {
+    margin-left: -10px;
+    margin-top: -2px;
+  }
 }
 
 .coming-soon {
@@ -512,6 +533,17 @@ p.left-side-p { text-align: left !important; }
   box-shadow: none;
   cursor: grab;
 } 
+
+.scroll-effect {
+  border: 1px solid rgba(255, 255, 255, 0);
+  animation: scroll-effect 2s ease-in-out 3;
+}
+
+@keyframes scroll-effect {
+  0% { border: 1px solid rgba(255, 255, 255, 0.0); }
+  50% { border: 1px solid rgba(255, 255, 255, 0.5); }
+  100% { border: 1px solid rgba(255, 255, 255, 0.0); }
+}
 
 @keyframes opacity {
   0% { opacity: 0 }
