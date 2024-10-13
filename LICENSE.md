@@ -1,11 +1,15 @@
-                    GNU GENERAL PUBLIC LICENSE
+<div align=center>
+<h2>GNU GENERAL PUBLIC LICENSE</h2>
                        Version 3, 29 June 2007
 
+  
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-                            Preamble
+<hr>
+ 
+<h3>Preamble</h3>
 
   The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
@@ -672,3 +676,4 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+</div>
