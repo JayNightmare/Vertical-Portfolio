@@ -368,6 +368,7 @@ p.left-side-p { text-align: left !important; }
     transform: translate(-50%, -50%);
   }
 
+  /* JS Knowledge */
   [alt="Node JS"] {
     margin-top: 4px;
   }
@@ -380,6 +381,32 @@ p.left-side-p { text-align: left !important; }
     margin-top: 6px;
   }
 
+  [alt="SQLite3"] {
+    margin-top: 5px;
+  }
+
+  [alt="Express"] {
+    margin-top: 4px;
+  }
+
+  [alt="JSON"] {
+    margin-top: 7px;
+  }
+
+  [alt="Axios"] {
+    margin-top: 6px;
+  }
+
+  [alt="Dotenv"] {
+    margin-top: 7px;
+    border-radius: 5px;
+  }
+
+  [alt="Sequelize"] {
+    margin-top: 5px;
+  }
+
+  /* JS Projects */
   [alt="Translator Bot"] {
     margin-top: 1px;
   }
@@ -387,6 +414,58 @@ p.left-side-p { text-align: left !important; }
   [alt="Gen Bot"] {
     margin-left: -15px;
     margin-top: 1.5px;
+  }
+
+  [alt="Saiyan Senshi Bot"] {
+    margin-top: 7px;
+    border-radius: 5px;
+  }
+
+  [alt="Study Bot"] {
+    margin-top: 6px;
+  }
+
+  [alt="Osakar Schedule Bot"] {
+    margin-top: 7px;
+    border-radius: 5px;
+  }
+
+  [alt="CRUDLR Bot"] {
+    margin-top: 9px;
+  }
+
+  /* Java Knowledge */
+  [alt="Java Swing"] {
+    position: relative;
+    bottom: 7.5px;
+    right: 8.5px;
+  }
+
+  [alt="Java FX"] {
+    position: relative;
+    bottom: 7px;
+    right: 13px;
+  }
+
+  [alt="Maven"] {
+    position: relative;
+    top: 5px;
+    left: 1px;
+  }
+
+  [alt="JUnit"] {
+    position: relative;
+    top: 8px;
+  }
+
+  [alt="Spring Boot"] {
+    position: relative;
+    top: 7.5px;
+  }
+
+  [alt="PyTorch"] {
+    position: relative;
+    top: 5px;
   }
 }
 
