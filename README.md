@@ -1,7 +1,7 @@
 # Vertical Portfolio
 
 ----
-Vertical Builder URL: [CodePen](https://codepen.io/JayNightmare/pen/LYaVXGv).
+Vertical Builder URL: [NexusGit](https://nexusgit.info).
 
 Icons URL: [FontAwesome](https://fontawesome.com/search?q=java&o=r)
 
