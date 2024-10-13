@@ -1,8 +1,20 @@
 # Vertical Portfolio
 
 ----
-Live Site URL: [NexusGit - Live](https://nexusgit.info)
-Test Site URL: [NexusGit - Test](https://jaynightmare.github.io/Vertical-Portfolio/src/index)
+
+<div align=center>
+
+| Site       |   Status    | Link                                                                           |
+-------------|-------------|--------------------------------------------------------------------------------|
+| Nexus Live | ✅ LIVE ✅ | [NexusGit - Live](https://nexusgit.info)                                       |
+| Nexus Test | ⚠️ TEST ⚠️ | [NexusGit - Test](https://jaynightmare.github.io/Vertical-Portfolio/src/index) |
+  
+</div>
+
+
+
+
+---
 
 Icons URL: [FontAwesome](https://fontawesome.com/search?q=java&o=r)
 
