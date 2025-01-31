@@ -133,7 +133,7 @@ header *,
 
   h5 {
     margin-bottom: 10px;
-    /* margin-top: 0; */
+    margin-top: 0;
     z-index: 3;
   }
 }
@@ -778,6 +778,10 @@ body.back-row-toggle .rain.back-row {
 
   .links-out [aria-label="bottombreaker"] {
     margin-top: 0;
+  }
+
+  .links-out h5:first-child {
+    margin-top: 20px;
   }
 }
 
