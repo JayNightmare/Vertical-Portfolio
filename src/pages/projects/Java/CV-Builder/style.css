@@ -148,6 +148,16 @@ p.left-side-p { text-align: left !important; }
     margin: 10px;
 }
 
+footer {
+  height: fit-content;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer .dim-footer {
+  color: rgb(125, 125, 125)
+}
+
 /* ! @media queries ! */
 @media (max-width: 750px) {
     .projects-list {

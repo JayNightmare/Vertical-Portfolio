@@ -143,11 +143,15 @@ header *,
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
 
-  h5:first-child {
-    margin-bottom: 0;
-    text-decoration: underline;
-  }
+.links-to-info > h5:first-child {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.links-to-info .info-section div > h5:first-child {
+  margin-top: 15px;
 }
 
 .links-to-info .no-top {
@@ -291,7 +295,6 @@ header *,
   border-radius: 5px;
   overflow: hidden;
   animation: float 3s ease-in-out infinite;
-  /* Add the floating animation */
 }
 
 #test-build::before {
